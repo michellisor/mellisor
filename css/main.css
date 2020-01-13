@@ -101,62 +101,73 @@ textarea {
    body {
      font-family: 'Source Sans Pro', sans-serif;
    color: #2b2b2b;
+   font-size: 16px;
    }
-   #about, #work, #contact {
-       height: 600px;
+   p {
+     padding: 0 10px 0 15px;
+     margin: 0 0 10px 0;
    }
 
    /****** GRID ******/
 .container {
+  width: 100%;
   display: grid;
   grid: auto auto auto auto auto / 100%;
+  place-items: center stretch;
+  justify-content: center;
 }
 .header {
+  width: 100%;
   grid-area: 1 / 1 / span 1 / span 1;
-  place-self: center;
+  display: flex;
+  flex-flow: column;
 }
 .hero {
-  grid-area: 2 / 2 / span 1 / span 1;
-  place-self: center;
+  width: 100%;
+  grid-area: 2 / 1 / span 1 / span 1;
+  min-height: 300px;
 }
 #about {
-  grid-area: 3 / 3 / span 1 / span 1;
+  width: 100%;
+  grid-area: 4 / 1 / span 1 / span 1;
 }
 #work {
-  grid-area: 4 / 4 / span 1 / span 1;
+  grid-area: 3 / 1 / span 1 / span 1;
 }
 #contact {
-  grid-area: 5 / 5 / span 1 / span 1;
+  grid-area: 5 / 1 / span 1 / span 1;
 }
 
    /****** HEADER ******/
-   .header {
-
-   }
 
    header h1 {
        font-family: 'Montserrat', sans-serif;
-       font-size: 30px;
        text-transform: uppercase;
        color: #336699;
-       padding: 65px 0 65px 25px;
-       justify-content: center;
+       text-align: center;
        width: 100%;
+       margin: .25em 0;
    }
-
    nav {
-       float: right;
-       padding: 75px 25px;
+     background-color: #d9e6f2;
+     width: 100%;
    }
-   nav ul li{
-       display: inline-block;
+   nav ul {
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     list-style-type: none;
+     padding: 0;
+     margin: .5em 0;
+   }
+   nav ul li {
+      text-align: center;
    }
    nav ul li a {
-       text-transform: uppercase;
-       text-decoration: none;
-       font-size: 18px;
-       color: #828282;
-       padding-left: 80px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      color: #737373;
    }
 
    .hero {
@@ -164,121 +175,105 @@ textarea {
      background-size: cover;
    }
    header h2 {
-       width: 1000px;
-       clear: both;
        font-family: 'Lora', serif;
-       font-size: 72px;
-       line-height: 80px;
+       font-size: 1.5em;
        color: #9b9b9b;
-       padding: 20px 0 20px 25px;
+       text-align: center;
+       margin: 0;
+       padding: 2em 0;
    }
-   /****** HERO SECTION ******/
-
 
    /****** ABOUT SECTION ******/
-   #about .full-width {
-       padding: 80px 0;
-   }
    #about h2 {
        font-family: 'Lora', serif;
-       font-size: 36px;
-       padding-left:50px;
+       font-size: 2em;
+       padding: 0 10px 0 15px;
+       color: #132639;
    }
 
    #about p {
        font-size: 21px;
-       color: #7f7f7f;
-       line-height: 41px;
-       padding-left: 50px;
-       padding-right:50px;
+       color: #737373;
    }
    #about a {
-     text-decoration: none;
-     color: #223300;
+     color: #132639;
    }
 
    /****** WORK SECTION ******/
    #work {
-     background: #f9ceb7;
+     background: #d9e6f2;
      text-align: center;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
    }
 
-   #work .full-width {
-       padding: 115px 0;
+   .skill {
+     margin: 25px 0;
+     width: 80%;
    }
 
    #work img {
-       padding-bottom: 30px;
+
    }
 
    #work h3 {
        font-size: 24px;
-       line-height: 32px;
-       width: 200px;
-       margin: 0 auto;
+       color: #4d4d4d;
    }
 
    #work p {
-       font-family: 'Lora', serif;
-       font-size: 18px;
-       line-height: 33px;
-       padding: 0 50px;
+     font-size: 1.125em;
+     color: #4d4d4d;
    }
 
    /****** CONTACT SECTION ******/
    #contact {
-     background-color: #ebebeb;
+     background-color: #79a6d2;
    }
 
-   #contact .full-width {
-       padding: 110px 0;
-   }
-
-   #contact img#contact-img {
-     margin-left: 25px;
+   #contact-img {
+     box-sizing: border-box;
      border: 12px solid white;
-   }
-
-   #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-       padding-left: 115px;
+     width: 100%;
    }
 
    #contact #envelope {
-       padding: 0 10px 0 115px;
+       padding: 10px;
    }
 
    #contact h2 {
        font-family: 'Lora', serif;
        font-size: 36px;
-       line-height: 44px;
    }
    #contact #email-header{
        font-size: 32px;
        font-weight: 400;
        line-height: 44px;
-       margin: -30px 0 5px 0;
    }
+
    #contact #socialmedia-header {
        font-weight: bold;
        font-size: 29px;
        line-height: 44px;
-       margin: 40px 0 0 0;
    }
+
    #contact a {
        text-decoration: none;
        color: #c49075;
        font-weight: bold;
        font-size: 28px;
    }
+
    #contact ul {
        list-style: none;
    }
    #contact ul li {
         display: inline-block;
    }
+
    #contact ul img {
        font-size: 32px;
-       padding-right: 48px;
    }
 /* ==========================================================================
    Helper classes
