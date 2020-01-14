@@ -232,7 +232,7 @@ textarea {
      background-color: #79a6d2;
      display: flex;
      flex-flow: row wrap;
-     align-content: center;
+     justify-content: center;
      text-align: center;
    }
    .contact {
