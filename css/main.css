@@ -171,21 +171,21 @@ textarea {
    }
 
    .hero {
-     background: url('../img/hero.png');
+     background: url('../img/tree-tips2.png');
      background-size: cover;
    }
    header h2 {
-       font-family: 'Lora', serif;
-       font-size: 1.5em;
-       color: #9b9b9b;
+       font-family: 'Raleway', sans-serif;
+       font-size: 2em;
+       color: white;
        text-align: center;
        margin: 0;
-       padding: 2em 0;
+       padding: 2em 15px;
    }
 
    /****** ABOUT SECTION ******/
    #about h2 {
-       font-family: 'Lora', serif;
+       font-family: 'Raleway', sans-serif;
        font-size: 2em;
        padding: 0 10px 0 15px;
        color: #132639;
@@ -214,12 +214,12 @@ textarea {
    }
 
    #work img {
-
+      color: #4d4d4d;
    }
 
    #work h3 {
-       font-size: 24px;
-       color: #4d4d4d;
+      font-size: 24px;
+      color: #4d4d4d;
    }
 
    #work p {
@@ -230,11 +230,19 @@ textarea {
    /****** CONTACT SECTION ******/
    #contact {
      background-color: #79a6d2;
+     display: flex;
+     flex-flow: row wrap;
+     align-content: center;
+     text-align: center;
    }
-
+   .contact {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+   }
    #contact-img {
      box-sizing: border-box;
-     border: 12px solid white;
+/*     border: 12px solid white; */
      width: 100%;
    }
 
@@ -242,39 +250,29 @@ textarea {
        padding: 10px;
    }
 
-   #contact h2 {
-       font-family: 'Lora', serif;
-       font-size: 36px;
-   }
-   #contact #email-header{
-       font-size: 32px;
-       font-weight: 400;
-       line-height: 44px;
-   }
-
-   #contact #socialmedia-header {
-       font-weight: bold;
-       font-size: 29px;
-       line-height: 44px;
+   #contact h3 {
+       font-family: 'Raleway', sans-serif;
+       font-size: 1.5em;
+       width: 80%;
+       color: #132639;
    }
 
    #contact a {
        text-decoration: none;
-       color: #c49075;
-       font-weight: bold;
-       font-size: 28px;
+       color: #e8d4c9;
+       font-size: 1.25em;
    }
 
    #contact ul {
        list-style: none;
+       padding: 0;
+       margin: 0 0 24px 0;
    }
    #contact ul li {
         display: inline-block;
+        padding: 0 20px;
    }
 
-   #contact ul img {
-       font-size: 32px;
-   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
