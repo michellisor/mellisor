@@ -434,6 +434,33 @@ textarea {
 #contact-img {
     border: 12px solid #f1ebeb;
 }
+}
+
+@media only screen and (min-width: 768px) {
+/**** Header ****/
+header h1 {
+  font-size: 2.25em;
+}
+header nav ul li a {
+  font-size: 1.5em;
+}
+.hero {
+  min-height: 450px;
+}
+header h2 {
+  font-size: 3.5em;
+}
+
+/**** Work ****/
+#work h3 {
+  font-size: 1.75em;
+}
+#work p {
+  font-size: 1.25em;
+}
+.skill {
+    margin: 35px 0;
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
