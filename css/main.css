@@ -168,7 +168,18 @@ textarea {
       text-transform: uppercase;
       font-size: 1.25em;
       color: #737373;
+      padding: 5px;
    }
+   a {
+/*  padding: 20px 32px; */
+    /*  border-radius: 16px; */
+      transition: box-shadow 0.4s ease-in, color 0.3s linear;
+    }
+
+    a:hover {
+      color: #4f4f4f;
+      box-shadow: 4px 4px 20px -5px rgba(0,0,0,.4), -4px -4px 20px -5px rgba(255, 255, 255, 1), inset 1px 1px 1px rgba(255, 255, 255, .2), inset -1px -1px 1px rgba(0, 0, 0, .1);
+    }
 
    .hero {
      background: url('../img/tree-tips2.png');
@@ -245,7 +256,7 @@ textarea {
      width: 100%;
    }
 
-   #contact #envelope {
+   #contact {
        padding: 10px;
    }
 
@@ -260,8 +271,12 @@ textarea {
        text-decoration: none;
        color: #e8d4c9;
        font-size: 1.25em;
+       padding: 10px;
+       height: auto;
    }
-
+   #envelope {
+     padding: 0 10px 0 0;
+   }
    #contact ul {
        list-style: none;
        padding: 0;
@@ -270,6 +285,9 @@ textarea {
    #contact ul li {
         display: inline-block;
         padding: 0 20px;
+   }
+   #contact ul li a {
+        border-radius: 50px;
    }
 
 /* ==========================================================================
@@ -436,7 +454,7 @@ textarea {
 }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
 /**** Header ****/
 header h1 {
   font-size: 2.25em;
@@ -460,6 +478,28 @@ header h2 {
 }
 .skill {
     margin: 35px 0;
+}
+
+/**** Contact ****/
+#contact h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+#contact a {
+      font-size: 1.75em;
+}
+/**** About ****/
+#about {
+  display: flex;
+  flex-flow: row wrap;
+}
+#about h2 {
+  width: 90%;
+}
+.column {
+  width: 50%;
+}
+
 }
 
 @media print,
